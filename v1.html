@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<lang="fr">
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        Calcul de <pre>-a + 5*b - 6*c - a*a +b*b</pre>
+        a: <input id="inputa" type="text" value="0" /><br>
+        b: <input id="inputb" type="text" value="0" /><br>
+        c: <input id="inputc" type="text" value="0" /><br>
+        <button id="btn">Calculate</button>
+        résultat: <div id="result"></div>
+        <script>
+            $("#btn").click(function(){
+                var a = $("#inputa").val();
+                var b = $("#inputb").val();
+                var c = $("#inputc").val();
+                var result = 0 - a + 5*b - 6*c - a*a +b*b;
+                $("#result").html(result);
+            });
+        </script>
+    </body>
+</html> 
+</lang>
